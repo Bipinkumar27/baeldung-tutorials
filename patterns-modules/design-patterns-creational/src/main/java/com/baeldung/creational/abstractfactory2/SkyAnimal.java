@@ -1,5 +1,8 @@
 package com.baeldung.creational.abstractfactory2;
 
+/**
+ * The type Sky animal.
+ */
 public class SkyAnimal extends Animal {
     SkyAnimal(EnumAnimalType type, EnumEra era, String description) {
         super(type, era);
