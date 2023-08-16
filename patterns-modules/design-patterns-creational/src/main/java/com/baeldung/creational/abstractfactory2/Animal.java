@@ -1,11 +1,8 @@
 package com.baeldung.creational.abstractfactory2;
 
-import com.baeldung.creational.abstractfactory2.EnumAnimalType;
-import com.baeldung.creational.abstractfactory2.EnumEra;
-
-public abstract class Animal1 {
+public abstract class Animal {
     private String description;
-    Animal1(EnumAnimalType type, EnumEra era) {
+    Animal(EnumAnimalType type, EnumEra era) {
 
     }
 

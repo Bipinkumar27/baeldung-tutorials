@@ -1,6 +1,6 @@
 package com.baeldung.creational.abstractfactory2;
 
-public class LandAnimal extends Animal1 {
+public class LandAnimal extends Animal {
 
     LandAnimal(EnumAnimalType type, EnumEra era, String description) {
         super(type, era);

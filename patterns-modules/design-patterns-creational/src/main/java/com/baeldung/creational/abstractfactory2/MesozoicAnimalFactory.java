@@ -4,7 +4,7 @@ import static com.baeldung.creational.abstractfactory2.Constants.MESOZOIC_ANIMAL
 
 public class MesozoicAnimalFactory implements EraAnimalFactory {
     @Override
-    public Animal1 createAnimal(EnumAnimalType type) {
+    public Animal createAnimal(EnumAnimalType type) {
         switch (type) {
         case LAND:
             return new LandAnimal(EnumAnimalType.LAND, EnumEra.MESOZOIC, MESOZOIC_ANIMAL_DESCRIPTION);
