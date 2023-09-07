@@ -5,8 +5,12 @@ package com.baeldung.creational.abstractfactory2;
  */
 public class SkyAnimal extends Animal {
 
-    SkyAnimal(EnumEra era,String name,  String description) {
-        super(era, name,description);
-        System.out.println(" created a animal of type: " + this.getClass().getSimpleName()+ " of Era: " + era);
+    SkyAnimal(AnimalEra era, String name) {
+        super(AnimalType.SKY, era, name);
+        create();
+    }
+    @Override
+    void create() {
+        System.out.println("Creating a " + type + " animal: " + name);
     }
 }
